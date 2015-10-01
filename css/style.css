@@ -1,0 +1,92 @@
+@import url(https://s3.amazonaws.com/beautyx/X1/css/style.css);
+/** Desktop Jack'd Experience **/
+.hero.intro {
+  background: url(http://placeimg.com/1800/600/animals); }
+
+/** Mobile First **/
+section#mobile-experience {
+  display: none; }
+
+@media all and (max-width: 992px) {
+  .jack-d, .intro, .outro {
+    display: none; }
+
+  section#mobile-experience {
+    display: block; }
+
+  section#mobile-experience .hero {
+    padding-bottom: 33.333%;
+    height: 0; }
+
+  menu.listing {
+    display: block;
+    margin: 0; }
+
+  li.list-item {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 36px 0;
+    overflow: hidden;
+    height: 150px; }
+
+  li.list-item:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+  li.list-item.has-bg {
+    background: url("http://placecage.com/300/300") no-repeat right top;
+    background-size: 300px; }
+
+  li.list-item img {
+    display: inline-block;
+    max-width: 150px;
+    margin: 9px;
+    float: left; }
+
+  .numbered-item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #999;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2em;
+    float: left; }
+
+  .item-heading {
+    display: inline-block;
+    line-height: 50px;
+    float: left;
+    margin-left: 10px; }
+
+  .item-info {
+    width: 46.666%;
+    display: inline-block;
+    padding-left: 5%;
+    float: left; }
+
+  .item-info p {
+    clear: both; }
+
+  /** Specified Pieces **/
+  .hero.shine {
+    background: violet; } }
+@media all and (max-width: 768px) {
+  li.list-item {
+    height: auto; }
+
+  li.list-item.has-bg {
+    background: none; }
+
+  .item-info {
+    width: 66.666%; } }
+@media all and (max-width: 480px) {
+  li.list-item img {
+    display: none; }
+
+  .item-info {
+    width: 90%; } }
